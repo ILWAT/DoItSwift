@@ -16,6 +16,7 @@
 		DEA80CAC27902D59006A794F /* WebTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA80CAB27902D59006A794F /* WebTests.swift */; };
 		DEA80CB627902D59006A794F /* WebUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA80CB527902D59006A794F /* WebUITests.swift */; };
 		DEA80CB827902D59006A794F /* WebUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA80CB727902D59006A794F /* WebUITestsLaunchTests.swift */; };
+		DEB4EE48279578AC00E89B13 /* htmlView.html in Resources */ = {isa = PBXBuildFile; fileRef = DEB4EE47279578AC00E89B13 /* htmlView.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		DEA80CB127902D59006A794F /* WebUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WebUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEA80CB527902D59006A794F /* WebUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebUITests.swift; sourceTree = "<group>"; };
 		DEA80CB727902D59006A794F /* WebUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DEB4EE47279578AC00E89B13 /* htmlView.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = htmlView.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				DEA80C9427902D58006A794F /* AppDelegate.swift */,
 				DEA80C9627902D58006A794F /* SceneDelegate.swift */,
 				DEA80C9827902D58006A794F /* ViewController.swift */,
+				DEB4EE47279578AC00E89B13 /* htmlView.html */,
 				DEA80C9A27902D58006A794F /* Main.storyboard */,
 				DEA80C9D27902D59006A794F /* Assets.xcassets */,
 				DEA80C9F27902D59006A794F /* LaunchScreen.storyboard */,
@@ -231,6 +234,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEB4EE48279578AC00E89B13 /* htmlView.html in Resources */,
 				DEA80CA127902D59006A794F /* LaunchScreen.storyboard in Resources */,
 				DEA80C9E27902D59006A794F /* Assets.xcassets in Resources */,
 				DEA80C9C27902D58006A794F /* Main.storyboard in Resources */,
