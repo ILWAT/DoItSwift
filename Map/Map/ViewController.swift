@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  Map
 //
-//  Created by 문정호 on 2022/01/24.
+//  Created by ILWAT on 2022/01/24.
 //
 
 import UIKit
@@ -28,15 +28,22 @@ class ViewController: UIViewController,CLLocationManagerDelegate {
         myMap.showsUserLocation=true //위치 보기 값을 true로 설정
     }
     
-    func goLocation(latitudeValue: CLLocationDegrees, longitudeValue : CLLocationDegrees, delta span :Double){
+    func goLocation(latitudeValue: CLLocationDegrees, longitudeValue : CLLocationDegrees, delta span :Double) -> CLLocationCoordinate2D{
         let pLocation = CLLocationCoordinate2DMake(latitudeValue, longitudeValue)
         let spanValue = MKCoordinateSpan(latitudeDelta: span, longitudeDelta: span)
         let pRegion = MKCoordinateRegion(center: pLocation, span: spanValue)
         myMap.setRegion(pRegion, animated: true)
+        return pLocation
     }
+    
+    func setAnnotation(latitudeValue: CLLocationDegrees, longitudeVale : CLLocationDegrees, delta span :Double, title strTitle:String,subtitle strSubtitle:String){
+        let annotation = MKPointAnnotation()
+        annotation.coordinate=goLocation(latitudeValue: latitudeValue, longitudeValue: longitudeVale, delta: span)
+    }
+    
     func locationManager(_ manager: CLLocationManager,didUpdateLocations locations:[CLLocation]){
         let pLocation = locations.last
-        goLocation(latitudeValue: (pLocation?.coordinate.latitude)!, longitudeValue: (pLocation?.coordinate.longitude)!, delta: 0.01)
+        _=goLocation(latitudeValue: (pLocation?.coordinate.latitude)!, longitudeValue: (pLocation?.coordinate.longitude)!, delta: 0.01)
         CLGeocoder().reverseGeocodeLocation(pLocation!, completionHandler: {
             (placemarks, Error) -> Void in
             let pm = placemarks!.first
