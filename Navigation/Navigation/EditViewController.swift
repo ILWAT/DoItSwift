@@ -7,10 +7,17 @@
 
 import UIKit
 
+protocol EditDelegate{
+    func didMessageEditDone(_controller: EditViewController, message: String)
+}
+
 class EditViewController: UIViewController {
     var textWayValue: String = ""
+    var textMessage: String = ""
+    var delegate : EditDelegate?
     
     @IBOutlet var lblWay: UILabel!
+    @IBOutlet var txMessage: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,8 +25,12 @@ class EditViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         lblWay.text = textWayValue
+        txMessage.text = textMessage
     }
-    @IBAction func btnDon(_ sender: UIButton) {
+    @IBAction func btnDone(_ sender: UIButton) {
+        if delegate != nil{
+            delegate?.didMessageEditDone(_controller: self, message: txMessage.text!)
+        }
         _=navigationController?.popViewController(animated: true)
     }
     
