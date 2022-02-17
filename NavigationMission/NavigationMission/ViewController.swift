@@ -57,7 +57,7 @@ class ViewController: UIViewController, EditDelegate {
             if(isZoom2){
             }
             else{
-                self.isZoom = false
+                //self.isZoom = false
                 self.isZoom2 = true
                 newWidth=imgView.frame.width*scale
                 newHeight=imgView.frame.height*scale
@@ -66,7 +66,7 @@ class ViewController: UIViewController, EditDelegate {
         }
         else {
             if isZoom2{
-                self.isZoom = true
+                //self.isZoom = true
                 self.isZoom2 = false
                 newWidth=imgView.frame.width/scale
                 newHeight=imgView.frame.height/scale
