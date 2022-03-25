@@ -11,7 +11,7 @@
         <!--Add View-->
         <scene sceneID="dJx-qx-nfa">
             <objects>
-                <viewController id="bTp-Wa-Z83" sceneMemberID="viewController">
+                <viewController id="bTp-Wa-Z83" customClass="AddViewController" customModule="Table" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LzM-g9-xfO">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -79,7 +79,7 @@
         <!--Detail View-->
         <scene sceneID="9Y1-Sg-GhS">
             <objects>
-                <viewController id="BGd-hH-dzj" sceneMemberID="viewController">
+                <viewController id="BGd-hH-dzj" customClass="DetailViewController" customModule="Table" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="K4Z-DR-sZV">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
